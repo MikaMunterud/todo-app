@@ -1,0 +1,91 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: fit-content;
+  border-radius: 16px;
+  padding: 32px;
+  gap: 6px;
+  background-color: #fefefe9f;
+  backdrop-filter: blur(24px);
+  width: 400px;
+  @media only screen and (max-width: 650px) {
+    width: calc(100% - 64px);
+  }
+  &_heading {
+    font-family: "Arvo", serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  & label {
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-left: 6px;
+  }
+
+  & input {
+    display: flex;
+    border-radius: 8px;
+    font-size: 1.4em;
+    border: 0px;
+    padding: 4px 8px;
+    width: 100%;
+    outline: none;
+    color: inherit;
+    background-color: #fefefe;
+    &::placeholder {
+      color: inherit;
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+  }
+  & .inputPasswordRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    & svg {
+      font-size: 1.4em;
+      cursor: pointer;
+      margin: 0 4px;
+    }
+  }
+
+  & .submitButton {
+    margin-top: 8px;
+    border: 0px;
+    font-family: "Arvo", serif;
+    font-weight: 600;
+    justify-content: center;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  & .link {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 8px;
+    @media only screen and (max-width: 650px) {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    & a {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+#homepage {
+  align-items: center;
+
+  & .homepageMessage {
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 400px;
+    text-align: center;
+  }
+}

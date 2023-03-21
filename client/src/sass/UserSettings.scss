@@ -1,0 +1,52 @@
+.friendInputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  gap: 32px;
+  @media only screen and (max-width: 650px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 0 32px;
+  }
+}
+
+.user {
+  position: absolute;
+  margin-top: 2px;
+  cursor: pointer;
+
+  &.delete {
+    right: 36px;
+    &::before {
+      transform: translate(-60%, 100%);
+    }
+  }
+  &.logout {
+    right: 86px;
+    &::before {
+      transform: translate(-35%, 100%);
+    }
+  }
+
+  &::before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: #fefefec8;
+    width: max-content;
+    position: absolute;
+    padding: 6px 8px;
+    font-size: 0.4em;
+    font-weight: 600;
+    border-radius: 6px;
+    left: 0;
+    bottom: 0px;
+  }
+  &:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  & svg {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(90deg, #47d3fd, transparent),
+    linear-gradient(45deg, #b7faff, transparent),
+    linear-gradient(225deg, #47d3fd, transparent),
+    linear-gradient(180deg, #47d3fd, transparent);
+  background-image: url("https://t3.ftcdn.net/jpg/01/10/40/52/240_F_110405220_HbToZ6DQgSMnPyEGbI3fSV6KJ1NEQJRX.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: luminosity;
+  color: #511d46;
+}
+
+h2 {
+  font-family: "Arvo", serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Arvo", serif;
+  font-size: 1.6em;
+  text-align: center;
+  font-style: italic;
+  & a {
+    color: inherit;
+  }
+}
+
+h4 {
+  font-family: "Arvo", serif;
+  font-size: 1.4em;
+}
+
+h5 {
+  font-family: "Arvo", serif;
+  font-size: 1.2em;
+}

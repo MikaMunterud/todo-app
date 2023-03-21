@@ -1,0 +1,133 @@
+.searchBoxes {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  & input {
+    display: flex;
+    border-radius: 8px;
+    font-size: 1.2em;
+    border: 0px;
+    padding: 4px 8px;
+    outline: none;
+    color: inherit;
+    background-color: #fefefe;
+    transition: all 1.2s ease-in-out;
+
+    &#searchButton {
+      width: min-content;
+      transition: visibility 1.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+
+    &.hidden {
+      visibility: hidden;
+      left: 0;
+      width: 0;
+      opacity: 0;
+    }
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+      width: 100%;
+    }
+    &::placeholder {
+      color: inherit;
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+    &::-webkit-search-cancel-button {
+      color: inherit;
+    }
+  }
+  & .searchIcon {
+    display: flex;
+
+    &_symbol {
+      display: flex;
+      position: relative;
+      min-width: 20px;
+      font-size: 1.4em;
+      cursor: pointer;
+      &::before {
+        content: attr(data-hover);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        background-color: #fefefec8;
+        width: max-content;
+        position: absolute;
+        padding: 6px 8px;
+        font-size: 0.7em;
+        font-weight: 600;
+        border-radius: 6px;
+        left: 0;
+        transform: translate(-30%, -100%);
+        bottom: 0px;
+      }
+      &:hover::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.todoListMessage {
+  font-family: "Arvo", serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  transition: all 500ms ease-in-out;
+}
+
+.button {
+  display: flex;
+  border-radius: 8px;
+  font-size: 1.2em;
+  border: 0px;
+  padding: 8px 8px;
+  outline: none;
+  justify-content: center;
+  color: inherit;
+  background-color: #fefefe9f;
+  cursor: pointer;
+  width: calc(100% / 2 - 16px);
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.passwordEye {
+  display: flex;
+  cursor: pointer;
+  transition: visibility 2s ease-in-out;
+  &_icon {
+    display: flex;
+    position: relative;
+    min-width: 30px;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+
+  &.hidden {
+    visibility: hidden;
+    left: 0;
+    width: 0;
+    opacity: 0;
+  }
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    width: fit-content;
+  }
+}
