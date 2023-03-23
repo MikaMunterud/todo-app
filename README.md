@@ -93,7 +93,7 @@ In the application, you should be able to:
 * Edit items from a todo list (if you are logged in)
 * If you as a user log in, you must be able to leave the website and come back without having to log in again. Use cookies for this.
 
-#### **For VG (Very Good grade)**
+### **For VG (Very Good grade)**
 
 * You should be able to have several lists
 * You should also be able to add to other users as friends, and then be able to see their lists
