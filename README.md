@@ -19,7 +19,7 @@ This todo app allows a user to register an account in this fictive app FIX IT✓
 
 When registered, they can login and access all the applications different functions.
 
-A user can add a friend who must be a user of this application. After a friend request has been sent, the friend must verify the request and after approving they can access that users todo lists. 
+A user can add a friend who must be a user of this application. After a friend request has been sent, the friend must verify the request and after approving they can access that users todo lists.
 
 However, if the friend wants a user to access their todo lists, they have to send a friend request back which also needs to be verified.
 
